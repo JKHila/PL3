@@ -1,11 +1,11 @@
 begin
+MINUS
 push 5
+IF
+IF
+MINUS
 push 0
 push -5
-MINUS
 push 1
-IF
 push 5
-IF
-MINUS
 end

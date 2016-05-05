@@ -1,10 +1,4 @@
-﻿  stdafx.cpp
-  TOY2Dlg.cpp
-  TOY2.cpp
-  ProcessDescription.cpp
-  PrefixToPostfix.cpp
+﻿  TOY2Dlg.cpp
   PostfixToIntermediate.cpp
-  Interpreter.cpp
-  DEFUN.cpp
   코드를 생성하고 있습니다...
   TOY2.vcxproj -> C:\Users\건희\Desktop\과제\pl3\PL_3_샘플프로젝트\PL3_샘플소스\Debug\TOY2.exe

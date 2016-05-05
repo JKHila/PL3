@@ -58,6 +58,10 @@ void PostfixToIntermediate::make_Intermediate(){
 //열린 괄호인가?
 int PostfixToIntermediate::Is_open_parentheses(int index){
 	index++;
+	
+	//function 확인
+	index = Is_op(index);
+	index += 2;
 
 	//term1 확인
 
@@ -89,10 +93,7 @@ int PostfixToIntermediate::Is_open_parentheses(int index){
 	else if (isdigit(linepointer[index])){
 		index = Is_con(index);
 	}
-	index += 2;
-
-	//function 확인
-	index = Is_op(index);
+	
 
 	return index + 1;
 }
@@ -106,7 +107,7 @@ int PostfixToIntermediate::Is_val(int index){
 	Intermediate.Append("push ");
 	//변수 마지막 index 찾기
 	for (i = index; i < linelen; i++){
-		if (linepointer[i] == ' '){
+		if (linepointer[i] == ' ' || linepointer[i] == ')'){
 			break;
 		}
 		else{
@@ -126,7 +127,7 @@ int PostfixToIntermediate::Is_con(int index){
 	Intermediate.Append("push ");
 	//상수 마지막 index 찾기
 	for (i = index; i < linelen; i++){
-		if (linepointer[i] == ' '){
+		if (linepointer[i] == ' ' || linepointer[i] == ')'){
 			break;
 		}
 		else{

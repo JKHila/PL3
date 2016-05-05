@@ -490,7 +490,7 @@ void CTOY2Dlg::compile(CStringA filename){
 	}
 	CString tmptmp(tmpmessage);
 	PrefixToPostfix postfixproram(tmptmp);
-	PostfixToIntermediate intermediate(postfixproram.getPostfix());
+	PostfixToIntermediate intermediate(program_list);//PostfixToIntermediate intermediate(postfixproram.getPostfix());
 	//메세지들 출력
 
 	//현재 다이얼로그 edit box 상태 불러오기
