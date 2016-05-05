@@ -1,0 +1,11 @@
+begin
+push 5
+push 0
+push -5
+MINUS
+push 1
+IF
+push 5
+IF
+MINUS
+end
